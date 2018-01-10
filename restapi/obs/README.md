@@ -19,11 +19,11 @@ s3cmd --configre # generate a config file in ~/.s3cmdcfg
 modify the follwing attributes of config file
 ```
 [default]
-access_key = **************************
+access_key = MDBU23YXYI05GIGOMP3RK***
 bucket_location = cn-north-1
 host_base = obs.cn-north-1.myhwclouds.com
 host_bucket = %(bucket)s.obs.cn-north-1.myhwclouds.com
-secret_key = ***********************************
+secret_key = MDXtObmFLbHHVEgxPMv5dg8zuK6f0pdgfd6brHV2H***
 
 ```
 
