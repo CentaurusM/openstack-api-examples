@@ -44,18 +44,18 @@ s3cmd mb s3://my-new-bucket-name
 s3cmd ls s3://my-bucket
 
 # Upload a file into the bucket
-s3cmd put file-* s3://logix.cz-test/ # multiple files
-s3cmd put addressbook.xml s3://logix.cz-test/addrbook.xml
-s3cmd put --acl-public --guess-mime-type storage.jpg s3://logix.cz-test/storage.jpg #with ACL
+s3cmd put file-* s3://my-bucket/ # multiple files
+s3cmd put myfile.xml s3://my-bucket/myfile.xml
+s3cmd put --acl-public --guess-mime-type mypic.jpg s3://my-bucket/mypic.jpg #with ACL
 
 # Get the file
-s3cmd get s3://logix.cz-test/addrbook.xml addressbook-2.xml
+s3cmd get s3://my-bucket/myfile-1.xml myfile-2.xml
 
 # Clean up: delete the object and remove the bucket
 # delete the objects
-s3cmd del s3://logix.cz-test/addrbook.xml s3://logix.cz-test/storage.jpg
+s3cmd del s3://my-bucket/myfile.xml s3://my-bucket/mypic.jpg
 # can only remove empty buckets
-s3cmd rb s3://logix.cz-test
+s3cmd rb s3://my-bucket
 
 
 
